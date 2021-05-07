@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIParameter : MonoBehaviour
+public class UIParameter : MonoBehaviour        //UI相关参数
 {
     public Text costGold;
     public Image cardImage;
