@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class StoreLoad : MonoBehaviour
 {
-    public GameObject prefab_1; //三种主商品类型
-    public GameObject prefab_2;
-    public GameObject prefab_3;
+    [SerializeField]public GameObject prefab_1; //三种主商品类型
+    [SerializeField]public GameObject prefab_2;
+    [SerializeField]public GameObject prefab_3;
+    
+    [SerializeField] private Sprite coin;       //金币和钻石
+    [SerializeField] private Sprite diamonds;
+    
     
     public Transform content;       //实例化对象父级
     private void Awake()
@@ -31,7 +35,7 @@ public class StoreLoad : MonoBehaviour
                     purchase.PurchaseOperation();
 
                 uiParameter.cardNumber.text = "x" + card.num.ToString();
-                uiParameter.cardImage.sprite = Resources.Load<Sprite>("Coin/" + card.type);    //钻石或金币
+                uiParameter.cardImage.sprite = card.type == 1 ? coin : diamonds;    //钻石或金币
                 uiParameter.titleText.text = card.type == 1 ? "Coins" : "Diamonds";
             }
             else if (card.type == 3)        //卡片
