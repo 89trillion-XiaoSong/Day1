@@ -12,11 +12,6 @@ public class Purchase : MonoBehaviour
     private Transform _checkMark;
     private Transform _tip;
 
-    public Text costGold;
-    public Image cardImage;
-    public Text cardNumber;
-    public Text titleText;
-
     private void Awake()        
     {
         _slider = transform.Find("Slider");     //获得相应对象

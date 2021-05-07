@@ -52,7 +52,11 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Click.cs" />
      <Compile Include="Assets\Script\Purchase.cs" />
-     <Compile Include="Assets\Script\Save.cs" />
+     <Compile Include="Assets\Script\StoreLoad\StoreLoad.cs" />
+     <Compile Include="Assets\Script\StoreLoad\UIParameter.cs" />
+     <Compile Include="Assets\Script\数据读取\JsonLoad.cs" />
+     <Compile Include="Assets\Script\数据读取\JsonModel.cs" />
+     <Compile Include="Assets\Script\数据读取\Save.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/fengxiaosong/Desktop/Unity项目/Day1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
