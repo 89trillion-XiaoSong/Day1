@@ -86,9 +86,9 @@ GameObject:
   - component: {fileID: 8100132334013296081}
   - component: {fileID: 8100132334013296092}
   - component: {fileID: 8100132334013296095}
-  - component: {fileID: 8100132334013296094}
+  - component: {fileID: 4229962604369840679}
   m_Layer: 5
-  m_Name: Card_5
+  m_Name: Card_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 22a911292fcfc4140ad90789a141f5a0, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8100132334013296094
+--- !u!114 &4229962604369840679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +161,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8100132334013296080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e36daffa01b64308bc526b736683660, type: 3}
+  m_Script: {fileID: 11500000, guid: 2053d3bdc601740d7b0cb228fee6e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPanelImg: []
+  itemImgs: []
+  slider: {fileID: 0}
+  checkMark: {fileID: 0}
+  purchaseTip: {fileID: 0}
+  btnPurchase: {fileID: 0}
+  txtCardNum: {fileID: 0}
+  txtCardCost: {fileID: 0}
+  txtTitle: {fileID: 0}
+  txtRare: {fileID: 0}
+  imgCard: {fileID: 0}
+  imgCardPanel: {fileID: 0}
+  imgCardBackGround: {fileID: 0}
 --- !u!1 &8100132335122783673
 GameObject:
   m_ObjectHideFlags: 0

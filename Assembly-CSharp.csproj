@@ -50,13 +50,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Function\02.Script\StoreLoad\JsonLoad.cs" />
-     <Compile Include="Assets\Function\02.Script\StoreLoad\JsonModel.cs" />
-     <Compile Include="Assets\Function\02.Script\StoreLoad\Save.cs" />
-     <Compile Include="Assets\Function\02.Script\StoreLoad\StoreLoad.cs" />
-     <Compile Include="Assets\Function\02.Script\StoreLoad\UIParameter.cs" />
-     <Compile Include="Assets\Function\02.Script\StoreOpen\Click.cs" />
-     <Compile Include="Assets\Function\02.Script\StorePurchase\Purchase.cs" />
+     <Compile Include="Assets\Function\02.Script\DailyItems\Data\ItemConfig.cs" />
+     <Compile Include="Assets\Function\02.Script\DailyItems\Data\RewardType.cs" />
+     <Compile Include="Assets\Function\02.Script\DailyItems\UI\DailyItem.cs" />
+     <Compile Include="Assets\Function\02.Script\DailyItems\UI\HomePage.cs" />
+     <Compile Include="Assets\Function\02.Script\DailyItems\UI\StoreDialog.cs" />
+     <Compile Include="Assets\Function\02.Script\Utils\SimpleJSON.cs" />
+     <Compile Include="Assets\Function\02.Script\Utils\TimeUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/fengxiaosong/Desktop/Unity项目/Day1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
