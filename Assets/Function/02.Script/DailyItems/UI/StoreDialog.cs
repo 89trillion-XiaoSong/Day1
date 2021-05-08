@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -20,6 +18,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
 
     private const int maxShow = 6;
 
+    //商店页面打开
     public void OnShowClick()
     {
         gameObject.SetActive(true);
@@ -31,6 +30,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
         InitCountDown();
     }
 
+    //商店页面关闭
     public void OnPointerClick(PointerEventData eventData)
     {
         // foreach (var item in _dailyItems)
@@ -41,6 +41,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
         Destroy(gameObject);
     }
 
+    //生成商品，加入商品列表
     private void InitItems()
     {
         foreach (DailyProduct dailyProduct in _dailyProducts)
@@ -58,6 +59,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
         }
     }
 
+    //启动倒计时协程
     private void InitCountDown()
     {
         StartCoroutine(TimeUtils.CountDown(countDownTime, txtCountDown));

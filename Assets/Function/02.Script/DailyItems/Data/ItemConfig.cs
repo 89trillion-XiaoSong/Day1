@@ -15,14 +15,16 @@ public struct DailyProduct
 
 public class ItemConfig
 {
-    public List<DailyProduct> dailyProducts = new List<DailyProduct>();
+    public List<DailyProduct> dailyProducts = new List<DailyProduct>();     //数据列表
     public int dailyProductCountDown;
 
+    //加载商品数据
     public ItemConfig()
     {
         JsonLoad();
     }
 
+    //解析Json文件，读取数据
     private void JsonLoad()
     {
         var jsonFile = Resources.Load<TextAsset>("Json/Data");

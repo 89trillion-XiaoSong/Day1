@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimeUtils : MonoBehaviour
 {
+    //时间格式化
     public static string GetTime(int seconds)
     {
         int h = seconds / 60 / 60;
@@ -14,6 +13,7 @@ public class TimeUtils : MonoBehaviour
         return string.Format("{0:00}:{1:00}:{2:00}", h, m, s);
     }
     
+    //倒计时协程
     public static IEnumerator CountDown(int timeCount, Text txtCountDown)
     {
         WaitForSeconds waitForSeconds = new WaitForSeconds(1);
