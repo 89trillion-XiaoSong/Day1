@@ -82,7 +82,7 @@ public class DailyItem : MonoBehaviour
         txtCardNum.text = "x" + num.ToString();
     }
 
-    //打开商店
+    //购买物品
     public void OnPurchaseClick()
     {
         slider.SetActive(false);

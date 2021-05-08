@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 4102761921922186159}
   - component: {fileID: 4102761921922186158}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Text_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 4102761922695892342}
   - component: {fileID: 4102761922695892345}
   m_Layer: 5
-  m_Name: CountDown
+  m_Name: Text_CountDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

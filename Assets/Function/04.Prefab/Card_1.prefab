@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 1634257897496629422}
   - component: {fileID: 1634257897496629329}
   m_Layer: 5
-  m_Name: Rare
+  m_Name: Text_Rare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 1634257897821924802}
   - component: {fileID: 1634257897821924805}
   m_Layer: 5
-  m_Name: ImageCard
+  m_Name: Img_Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 1634257898097909150}
   - component: {fileID: 1634257898097909121}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Text_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 1634257898391650314}
   - component: {fileID: 1634257898391650317}
   m_Layer: 5
-  m_Name: Purchase
+  m_Name: Btn_Purchase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,7 +1405,7 @@ GameObject:
   - component: {fileID: 2271495005691148743}
   - component: {fileID: 5235846515347275009}
   m_Layer: 5
-  m_Name: TextCardNumber
+  m_Name: Text_CardNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
