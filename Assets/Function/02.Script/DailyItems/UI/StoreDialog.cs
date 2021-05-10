@@ -85,6 +85,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
                     item.Refresh();    
                 }
             }
+            StartCoroutine(CountDown(countDownTime));
         }
     }
     
