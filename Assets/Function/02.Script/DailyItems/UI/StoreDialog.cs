@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -19,9 +20,8 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
     private const int maxShow = 6;
 
     //商店页面打开
-    public void OnShowClick()
+    public void Init()
     {
-        gameObject.SetActive(true);
         _itemConfig = new ItemConfig();
         _dailyProducts = _itemConfig.dailyProducts;
         countDownTime = _itemConfig.dailyProductCountDown;
@@ -33,11 +33,6 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
     //商店页面关闭
     public void OnPointerClick(PointerEventData eventData)
     {
-        // foreach (var item in _dailyItems)
-        // {
-        //     Destroy(item.gameObject);
-        // }
-        //gameObject.SetActive(false);
         Destroy(gameObject);
     }
 
@@ -55,6 +50,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
         for (int i = cardCount; i < maxShow; i++)
         {
             DailyItem item = Instantiate(prefabLock, content);
+            item.isLock = true;
             _dailyItems.Add(item);
         }
     }
@@ -62,7 +58,42 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
     //启动倒计时协程
     private void InitCountDown()
     {
-        StartCoroutine(TimeUtils.CountDown(countDownTime, txtCountDown));
+        StartCoroutine(CountDown(countDownTime));
     }
     
+    
+    //倒计时协程
+    private IEnumerator CountDown(int timeCount)
+    {
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+        while (timeCount > 0)
+        {
+            string timeString = GetTime(timeCount);
+            txtCountDown.text = "Refresh Time : " + timeString;
+            yield return waitForSeconds;
+            timeCount--;
+            string time = GetTime(timeCount);
+            txtCountDown.text = "Refresh Time : " + time;
+        }
+
+        if (timeCount <= 0)
+        {
+            foreach (DailyItem item in _dailyItems)
+            {
+                if (!item.isLock)
+                {
+                    item.Refresh();    
+                }
+            }
+        }
+    }
+    
+    //时间格式化
+    private static string GetTime(int seconds)
+    {
+        int h = seconds / 60 / 60;
+        int m = seconds / 60 % 60;
+        int s = seconds % 60;
+        return string.Format("{0:00}:{1:00}:{2:00}", h, m, s);
+    }
 }

@@ -56,7 +56,6 @@
      <Compile Include="Assets\Function\02.Script\DailyItems\UI\HomePage.cs" />
      <Compile Include="Assets\Function\02.Script\DailyItems\UI\StoreDialog.cs" />
      <Compile Include="Assets\Function\02.Script\Utils\SimpleJSON.cs" />
-     <Compile Include="Assets\Function\02.Script\Utils\TimeUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/fengxiaosong/Desktop/Unity项目/Day1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

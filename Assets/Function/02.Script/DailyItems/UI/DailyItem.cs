@@ -17,7 +17,11 @@ public class DailyItem : MonoBehaviour
     [SerializeField] private Image imgCard;
     [SerializeField] private Image imgCardPanel;
     [SerializeField] private Image imgCardBackGround;
+    [SerializeField] private Image imgCoin;
 
+    public bool isLock;
+    public bool isCard;
+    
     //生成商品
     public void InitItem(DailyProduct dailyProduct)
     {
@@ -31,7 +35,12 @@ public class DailyItem : MonoBehaviour
     {
         if (costGold > 0)
         {
-            txtCardCost.text = costGold.ToString();
+            txtCardCost.text = "     " + costGold;
+        }
+        else
+        {
+            txtCardCost.text = "Free!";
+            imgCoin.gameObject.SetActive(false);
         }
     }
 
@@ -55,6 +64,8 @@ public class DailyItem : MonoBehaviour
                     imgCard.sprite = itemImgs[5];
                     break;
             }
+
+            isCard = true;
         }
         else if (type == RewardType.Coins)
         {
@@ -79,7 +90,7 @@ public class DailyItem : MonoBehaviour
     //商品数量
     private void CardNum(int num)
     {
-        txtCardNum.text = "x" + num.ToString();
+        txtCardNum.text = "x" + num;
     }
 
     //购买物品
@@ -94,7 +105,10 @@ public class DailyItem : MonoBehaviour
     //商店刷新
     public void Refresh()
     {
-        slider.SetActive(true);
+        if (isCard)
+        {
+            slider.SetActive(true);
+        }
         btnPurchase.SetActive(true);
         checkMark.SetActive(false);
         purchaseTip.SetActive(false);

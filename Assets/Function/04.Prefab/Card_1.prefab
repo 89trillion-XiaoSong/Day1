@@ -186,8 +186,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.5, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.29, y: 0}
+  m_SizeDelta: {x: -6.781929, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1634257897245862909
 CanvasRenderer:
@@ -229,7 +229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 500
+  m_Text: '     500'
 --- !u!1 &1634257897496629331
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +570,9 @@ MonoBehaviour:
   imgCard: {fileID: 1634257897821924805}
   imgCardPanel: {fileID: 1634257898852596389}
   imgCardBackGround: {fileID: 1634257897625051637}
+  imgCoin: {fileID: 1634257898728869042}
+  isLock: 0
+  isCard: 0
 --- !u!1 &1634257897821924807
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +977,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 736fbb60c9e5a454bb7eb946cf6ac352, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
