@@ -33,7 +33,7 @@ public class StoreDialog : MonoBehaviour,IPointerClickHandler
     //商店页面关闭
     public void OnPointerClick(PointerEventData eventData)
     {
-        Destroy(gameObject);
+        Destroy(gameObject);   
     }
 
     //生成商品，加入商品列表

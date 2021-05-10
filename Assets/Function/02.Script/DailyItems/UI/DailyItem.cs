@@ -22,7 +22,7 @@ public class DailyItem : MonoBehaviour
     public bool isLock;
     public bool isCard;
     
-    //生成商品
+    //初始化商品
     public void InitItem(DailyProduct dailyProduct)
     {
         CardCost(dailyProduct.costGold);
